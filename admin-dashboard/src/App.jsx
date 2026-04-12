@@ -1,7 +1,11 @@
+import Topbar from "./Components/Topbar";
+import Dashboard from "./Components/Dashboard";
+
 const App = () => {
   return (
     <div>
-      Admin
+      <Topbar />
+      <Dashboard />
     </div>
   )
 }
