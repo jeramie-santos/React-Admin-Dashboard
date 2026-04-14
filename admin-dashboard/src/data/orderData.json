@@ -1,0 +1,16 @@
+{ 
+        "labels": ["Mon", "Tue", "wed", "Thu", "Fri"],
+        "datasets": [
+            {
+                "label": "Order",
+                "data": [13, 29, 43, 24, 49],
+                "backgroundColor": [
+                    "rgba(0, 0, 255)",
+                    "rgba(0, 255, 0)",
+                    "rgba(255, 0, 0)",
+                    "rgba(255, 0, 255)",
+                    "rgba(0, 255, 255)"
+                ]
+            }
+        ]
+}

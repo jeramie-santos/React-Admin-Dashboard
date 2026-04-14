@@ -1,0 +1,10 @@
+{ 
+        "labels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        "datasets": [
+            {
+                "label": "Sales",
+                "data": [980, 1200, 1100, 1500, 1400, 2000, 2200, 2100, 1900, 2300, 2500, 2700],
+                "backgroundColor": "rgba(0, 0, 255)"
+            }
+        ]
+    }

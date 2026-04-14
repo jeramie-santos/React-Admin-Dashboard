@@ -1,25 +1,13 @@
 import { Chart as ChartJS } from "chart.js/auto"
 import { Bar, Doughnut, Line } from "react-chartjs-2"
 
+import orderData from "../data/orderData.json"
+import salesData from "../data/salesData.json"
+import categoriesData from "../data/categoriesData.json"
+
 const Charts = () => {
 
-    const orderData = { 
-        labels: ["Mon", "Tue", "wed", "Thu", "Fri"],
-        datasets: [
-            {
-                label: "Order",
-                data: [13, 29, 43, 24, 49],
-                backgroundColor: [
-                    "rgba(0, 0, 255)",
-                    "rgba(0, 255, 0)",
-                    "rgba(255, 0, 0)",
-                    "rgba(255, 0, 255)",
-                    "rgba(0, 255, 255)",]
-            }
-        ]
-    }
-
-    const optionsUser = {
+    const options = {
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
@@ -29,43 +17,6 @@ const Charts = () => {
             }
         }
     };
-
-    const salesData = { 
-        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-        datasets: [
-            {
-                label: "Sales",
-                data: [980, 1200, 1100, 1500, 1400, 2000, 2200, 2100, 1900, 2300, 2500, 2700],
-                backgroundColor: "rgba(0, 0, 255)",
-            }
-        ]
-    }
-
-    const optionsOrder = {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-            legend: {
-                position: "top",
-                display: false
-            }
-        }
-    };
-
-    const categoriesData = { 
-        labels: ["Electronics", "Clothing", "Food"],
-        datasets: [
-            {
-                label: "Categories",
-                data: [40, 25, 35],
-                backgroundColor: [
-                    "rgba(255, 0, 0)",
-                    "rgba(0, 255, 0)",
-                    "rgba(0, 0, 255)"
-                ],
-            }
-        ]
-    }
 
     const optionsCategories = {
         responsive: true,
@@ -85,7 +36,7 @@ const Charts = () => {
                 <div className="flex-1 relative">
                     <Line
                         data={salesData}
-                        options={optionsUser}
+                        options={options}
                     />
                 </div>
             </div>
@@ -95,7 +46,7 @@ const Charts = () => {
                   <div className="flex-1 relative">
                     <Bar 
                         data={orderData}
-                        options={optionsOrder}
+                        options={options}
                     />
                   </div>
                 </div>
