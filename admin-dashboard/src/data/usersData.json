@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Max Santos",
+    "email": "maxsantos@gmail.com",
+    "role": "User",
+    "status": "Active"
+  },
+  {
+    "name": "Anna Reyes",
+    "email": "annareyes@gmail.com",
+    "role": "Admin",
+    "status": "Active"
+  },
+  {
+    "name": "John Cruz",
+    "email": "johncruz@gmail.com",
+    "role": "User",
+    "status": "Inactive"
+  },
+  {
+    "name": "Maria Lopez",
+    "email": "marialopez@gmail.com",
+    "role": "Moderator",
+    "status": "Active"
+  },
+  {
+    "name": "Carlos Mendoza",
+    "email": "carlosmendoza@gmail.com",
+    "role": "User",
+    "status": "Pending"
+  },
+  {
+    "name": "Liza Fernandez",
+    "email": "lizafernandez@gmail.com",
+    "role": "User",
+    "status": "Active"
+  },
+  {
+    "name": "Paul Garcia",
+    "email": "paulgarcia@gmail.com",
+    "role": "Admin",
+    "status": "Inactive"
+  },
+  {
+    "name": "Jenny Torres",
+    "email": "jennytorres@gmail.com",
+    "role": "User",
+    "status": "Active"
+  },
+  {
+    "name": "Mark Aquino",
+    "email": "markaquino@gmail.com",
+    "role": "Moderator",
+    "status": "Pending"
+  },
+  {
+    "name": "Chris Bautista",
+    "email": "chrisbautista@gmail.com",
+    "role": "User",
+    "status": "Active"
+  }
+]

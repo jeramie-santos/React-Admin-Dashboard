@@ -1,5 +1,6 @@
 import Cards from "./Cards";
 import Charts from "./Charts";
+import Users from "./Users";
 
 const Dashboard = () => {
     return (
@@ -9,6 +10,7 @@ const Dashboard = () => {
             </div>
             <Cards />
             <Charts />
+            <Users />
         </section>
     )
 }
