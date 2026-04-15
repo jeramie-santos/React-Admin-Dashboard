@@ -2,6 +2,27 @@
 
 @import "tailwindcss";
 
+:root {
+  --color-bg: #e9f3f0;              /* overall page */
+  --color-card: #ffffff;            /* cards / panels */
+  --color-sidebar: #055035;
+
+  --color-primary: #32725a;
+  --color-primary-light: #8cada2;
+  --color-primary-dark: #1b6147;
+
+  --color-text-primary: #111827;
+  --color-text-secondary: #6b7280; 
+
+ --color-chart-darkest: #3c7961;
+ --color-chart-darker: #508573;
+ --color-chart-dark: #639484;
+ --color-chart-light: #78a193;
+ --color-chart-lightest: #78a193;
+
+
+}
+
 body {
     font-family: Barlow, sans-serif;
 }

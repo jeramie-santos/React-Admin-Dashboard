@@ -2,7 +2,7 @@ const Cards = () => {
     return (
         <div className="flex gap-8 flex-col md:flex-row flex-wrap">
             <div className="flex-1">
-                <div className="border h-30 rounded-lg border-gray-400 flex flex-col p-2">
+                <div className="bg-(--color-card) shadow-lg h-30 rounded-lg flex flex-col p-2">
                     <div className="flex-1">
                         <p>Total Users</p>
                     </div>
@@ -13,7 +13,7 @@ const Cards = () => {
                 </div>
             </div>
             <div className="flex-1">
-                <div className="border h-30 rounded-lg border-gray-400 flex flex-col p-2">
+                <div className="bg-(--color-card) shadow-lg h-30 rounded-lg flex flex-col p-2">
                     <div className="flex-1">
                         <p>Revenue</p>
                     </div>
@@ -24,7 +24,7 @@ const Cards = () => {
                 </div>
             </div>
             <div className="flex-1">
-                <div className="border h-30 rounded-lg border-gray-400 flex flex-col p-2">
+                <div className="bg-(--color-card) shadow-lg h-30 rounded-lg flex flex-col p-2">
                     <div className="flex-1">
                         <p>Order</p>
                     </div>
@@ -35,7 +35,7 @@ const Cards = () => {
                 </div>
             </div>
             <div className="flex-1">
-                <div className="border h-30 rounded-lg border-gray-400 flex flex-col p-2">
+                <div className="bg-(--color-card) shadow-lg h-30 rounded-lg flex flex-col p-2">
                     <div className="flex-1">
                         <p>Growth Rate</p>
                     </div>

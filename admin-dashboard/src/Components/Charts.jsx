@@ -31,7 +31,7 @@ const Charts = () => {
 
     return (
         <div className="flex flex-col gap-10">
-            <div className="flex flex-1 flex-col gap-4 h-60 md:h-75 lg:h-100 border border-gray-400 rounded-xl p-4">
+            <div className="bg-(--color-card) shadow-lg flex flex-1 flex-col gap-4 h-60 md:h-75 lg:h-100 rounded-xl p-4">
                 <h3 className="font-bold text-xl">Monthly Sales</h3>
                 <div className="flex-1 relative">
                     <Line
@@ -41,8 +41,8 @@ const Charts = () => {
                 </div>
             </div>
            <div className="flex flex-1 flex-col gap-10 md:flex-row items-center justify-center">
-             <div className="flex flex-col w-full gap-4 h-75 md:h-90 lg:w-0 lg:h-100 lg:flex-1 border border-gray-400 rounded-xl p-4">
-                  <h3 className="font-bold text-xl">Weekly Sales</h3>
+             <div className="bg-(--color-card) shadow-lg flex flex-col w-full gap-4 h-75 md:h-90 lg:w-0 lg:h-100 lg:flex-1 rounded-xl p-4">
+                  <h3 className="font-bold text-xl">Weekly Orders</h3>
                   <div className="flex-1 relative">
                     <Bar 
                         data={orderData}
@@ -50,7 +50,7 @@ const Charts = () => {
                     />
                   </div>
                 </div>
-                <div className="flex flex-col w-full gap-4 h-75 md:h-90 lg:w-0 lg:h-100 lg:flex-1 border border-gray-400 rounded-xl p-4">
+                <div className="bg-(--color-card) shadow-lg flex flex-col w-full gap-4 h-75 md:h-90 lg:w-0 lg:h-100 lg:flex-1 rounded-xl p-4">
                   <h3 className="font-bold text-xl">Categories</h3>
                   <div className="flex-1 relative">
                     <Doughnut 

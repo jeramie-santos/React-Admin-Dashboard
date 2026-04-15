@@ -3,11 +3,11 @@
         "datasets": [
             {
                 "label": "Categories",
-                "data": [40, 25, 35],
+                "data": [50, 15, 35],
                 "backgroundColor": [
-                    "rgba(255, 0, 0)",
-                    "rgba(0, 255, 0)",
-                    "rgba(0, 0, 255)"
+                    "#32725a",
+                    "#8cada2",
+                    "#1b6147"
                 ]
             }
         ]

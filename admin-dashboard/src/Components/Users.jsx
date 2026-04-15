@@ -6,12 +6,12 @@ const Users = () => {
     console.log(usersData);
     
     return (
-        <div className="flex flex-col gap-4">
+        <div className="bg-(--color-card) shadow-lg flex flex-col gap-4 py-2 px-4 rounded-2xl">
             <p className="text-3xl font-bold">Users</p>
-            <div className="flex">
-                <table className="w-100p md:w-250 lg:w-400 overflow-auto">
+            <div className="flex items-center justify-center">
+                <table className="w-100p md:w-250 lg:w-355 overflow-auto">
                     <thead>
-                        <tr className="bg-gray-300">
+                        <tr className="">
                             <th className="p-1 text-sm">Name</th>
                             <th className="p-1 text-sm">Email</th>
                             <th className="p-1 text-sm">Role</th>
@@ -21,12 +21,12 @@ const Users = () => {
                     </thead>
                     <tbody>
                         {usersData.map((user, index) => 
-                            <tr key={index}>
-                                <td className="p-1 text-sm">{user.name}</td>
-                                <td className="p-1 text-sm">{user.email}</td>
-                                <td className="p-1 text-sm">{user.role}</td>
-                                <td className="p-1 text-sm">{user.status}</td>
-                                <td className="p-1 text-sm">Edit | Delete</td>
+                            <tr key={index} className={index % 2 === 0 ? "bg-(--color-bg)" : "bg-white"}>
+                                <td className="p-1 md:p-2 lg:p-3 text-sm text-center">{user.name}</td>
+                                <td className="p-1 md:p-2 lg:p-3 text-sm text-center">{user.email}</td>
+                                <td className="p-1 md:p-2 lg:p-3 text-sm text-center">{user.role}</td>
+                                <td className="p-1 md:p-2 lg:p-3 text-sm text-center">{user.status}</td>
+                                <td className="p-1 md:p-2 lg:p-3 text-sm text-center">Edit | Delete</td>
                             </tr>
                         )}
                     </tbody>

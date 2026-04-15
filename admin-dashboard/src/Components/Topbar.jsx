@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Topbar = ({toggle}) => {
     return (
-        <section className="p-4 md:p-6 flex items-center justify-between lg:justify-end border border-red-500 md:border-green-500 lg:border-blue-500 xl:border-yellow-500">
+        <section className="p-4 md:p-6 flex items-center justify-between lg:justify-end shadow-md z-10">
             <button onClick={toggle} className="lg:hidden">
                 <FontAwesomeIcon icon={faBars} className="text-3xl"/>
             </button>
