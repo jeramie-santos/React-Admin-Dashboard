@@ -3,8 +3,8 @@
 @import "tailwindcss";
 
 :root {
-  --color-bg: #e9f3f0;              /* overall page */
-  --color-card: #ffffff;            /* cards / panels */
+  --color-bg: #e9f3f0; 
+  --color-card: #ffffff;          
   --color-sidebar: #055035;
 
   --color-primary: #32725a;

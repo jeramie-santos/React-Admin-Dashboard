@@ -4,7 +4,7 @@ import Users from "./Users";
 
 const Dashboard = () => {
     return (
-        <section className="flex-1 p-4 md:p-6 lg:p-8 flex flex-col gap-8 bg-(--color-bg)">
+        <section className="flex-1 p-4 md:p-6 lg:p-8 flex flex-col gap-8">
             <div>
                 <p className="text-3xl font-bold">Dashboard</p>
             </div>
