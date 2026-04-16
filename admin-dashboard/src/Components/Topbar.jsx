@@ -81,20 +81,20 @@ const Topbar = ({toggle}) => {
                                 <p className="text-(--color-text-secondary)">maxsantos@gmail.com</p>
                             </div>
                         </div>
-                        <div className="h-[1px] bg-(--color-sidebar)"></div>
+                        <div className="h-[1px] bg-(--color-primary)"></div>
                         <div className="flex flex-col gap-6">
                             <div className="flex gap-2 items-center hover:cursor-pointer">
-                                <FontAwesomeIcon icon={faUser} className="text-(--color-sidebar)"/>
+                                <FontAwesomeIcon icon={faUser} className="text-(--color-primary)"/>
                                 Profile
                             </div>
                             <div className="flex gap-2 items-center hover:cursor-pointer">
-                                <FontAwesomeIcon icon={faGear} className="text-(--color-sidebar)"/>
+                                <FontAwesomeIcon icon={faGear} className="text-(--color-primary)"/>
                                 Setting
                             </div>
                         </div>
-                        <div className="h-[1px] bg-(--color-sidebar)"></div>
+                        <div className="h-[1px] bg-(--color-primary)"></div>
                         <div className="flex gap-2 items-center hover:cursor-pointer">
-                            <FontAwesomeIcon icon={faArrowRightFromBracket} className="text-(--color-sidebar)"/>
+                            <FontAwesomeIcon icon={faArrowRightFromBracket} className="text-(--color-primary)"/>
                             Log Out
                         </div>
                     </div>

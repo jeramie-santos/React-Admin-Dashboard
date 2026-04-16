@@ -23,7 +23,7 @@ const Charts = () => {
         maintainAspectRatio: false,
         plugins: {
             legend: {
-            position: "top"
+            position: "bottom"
             }
         }
 

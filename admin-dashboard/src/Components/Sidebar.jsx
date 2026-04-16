@@ -8,7 +8,7 @@ const Sidebar = ({isOpen, setIsOpen}) => {
     
 
     return (
-        <nav  className={`bg-(--color-sidebar) text-white py-10 z-50
+        <nav  className={`bg-(--color-primary) text-white py-10 z-50
             ${isOpen ? " h-screen w-60 fixed" : "hidden"}  
             lg:flex lg:sticky lg:top-0 lg:h-screen`}>
             <div className="flex flex-col gap-4 px-10 lg:py-5">
