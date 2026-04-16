@@ -13,8 +13,7 @@ const Topbar = ({toggle}) => {
     useEffect(() => {
         const handleClickOutsideProfile = (event) => {
             if (menuRef.current && !menuRef.current.contains(event.target)) {
-                setIsProfileOpen(prev => !prev)
-                console.log("click");
+                setIsProfileOpen(false)
             }
         }
 
@@ -37,7 +36,7 @@ const Topbar = ({toggle}) => {
                     <FontAwesomeIcon icon={faBell} className="text-2xl hover:cursor-pointer" onClick={() => setIsNotifOpen(prev => !prev)}/>
                     
                     {isNotifOpen && 
-                    <div className="flex flex-col gap-4 text-sm z-50 w-60 h-60 bg-(--color-card) absolute top-18 right-0 rounded-2xl shadow-2xl p-4 overflow-auto">
+                    <div className="flex flex-col gap-4 text-sm z-50 w-60 h-60 bg-(--color-card) absolute top-19 right-0 rounded-2xl shadow-2xl p-4 overflow-auto">
                         <div className="flex gap-2 items-center hover:cursor-pointer">
                             <p className="flex-1">1 min ago</p>
                             <p className="flex-3">Anna Reyes submitted a request.</p>
