@@ -4,9 +4,9 @@ import usersData from "../data/usersData.json"
 const Users = () => {
     
     return (
-        <section className="flex flex-col gap-4">
-            <p className="text-3xl font-bold">Users</p>
-            <div className="bg-(--color-card) shadow-lg py-2 px-4 w-full overflow-x-auto rounded-xl">
+        <section>
+            <div className="flex flex-col gap-4 bg-(--color-card) shadow-lg py-2 px-4 w-full overflow-x-auto rounded-xl">
+                <p className="text-3xl font-bold">Users</p>
                 <table className="w-full min-w-[600px] text-left">
                     <thead>
                         <tr>
