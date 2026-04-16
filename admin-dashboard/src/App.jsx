@@ -1,10 +1,10 @@
 import Dashboard from "./Components/Dashboard";
 import Analytics from "./Components/Analytics";
-import Users from "./Components/Users";
 import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import Layout from "./Components/Layout";
 import PageNotFound from "./Components/PageNotFound";
+import UsersLists from "./Components/UsersList";
 
 const App = () => {
   
@@ -16,7 +16,7 @@ const App = () => {
           <Route element={<Layout isOpen={isOpen} setIsOpen={setIsOpen}/>}>
             <Route path="/" element={<Dashboard/>}/>
             <Route path="/analytics" element={<Analytics/>}/>
-            <Route path="/users" element={<Users/>}/>
+            <Route path="/users" element={<UsersLists/>}/>
           </Route>
         </Routes>
   )
