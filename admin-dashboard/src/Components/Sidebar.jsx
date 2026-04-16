@@ -11,7 +11,10 @@ const Sidebar = ({isOpen, setIsOpen}) => {
         <nav  className={`bg-(--color-sidebar) text-white py-10 z-50
             ${isOpen ? " h-screen w-60 fixed" : "hidden"}  
             lg:flex lg:sticky lg:top-0 lg:h-screen`}>
-            <div className="flex flex-col gap-4 px-10 py-5">
+            <div className="flex flex-col gap-4 px-10 lg:py-5">
+                <div className="flex justify-end">
+                    <button onClick={() => setIsOpen(false)} className="lg:hidden text-start text-xl border py-2 px-5 font-bold rounded-lg">✕</button>
+                </div>
                 <h1 className="font-bold text-3xl">Admin Dashboard</h1>
                 <div className="flex flex-col gap-2">
                     <NavLink to="/" end className={({isActive}) => 
@@ -35,7 +38,6 @@ const Sidebar = ({isOpen, setIsOpen}) => {
                         Users
                     </NavLink>
                 </div>
-                <button onClick={() => setIsOpen(false)} className="lg:hidden text-start text-xl">Close</button>
             </div>
         </nav>
     )
