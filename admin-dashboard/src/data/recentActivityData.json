@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "user": "Juan Dela Cruz",
+        "action": "created an account",
+        "target": null,
+        "time": "2 minutes ago",
+        "type": "create"
+    },
+    {
+        "id": 2,
+        "user" : "Maria Santos",
+        "action": "updated profile information",
+        "target": "Email & Password",
+        "time": "10 minutes ago",
+        "type": "update"
+    },
+    {
+        "id": 3,
+        "user": "Admin",
+        "action": "deleted a user",
+        "target": "Pedro Reyes",
+        "time": "25 minutes ago",
+        "type": "delete"
+    },
+    {
+        "id": 4,
+        "user": "Carlos Mendoza",
+        "action": "logged in",
+        "target": null,
+        "time": "1 hour ago",
+        "type": "login"
+    },
+    {
+        "id": 5,
+        "user": "Ana Lopez",
+        "action": "uploaded a document",
+        "target": "Resume.pdf",
+        "time": "2 hours ago",
+        "type": "upload"
+    },
+    {
+    "id": 6,
+    "user": "System",
+    "action": "generated monthly report",
+    "target": "March Analytics",
+    "time": "3 hours ago",
+    "type": "system"
+    }
+]

@@ -1,5 +1,6 @@
 import Cards from "./Cards";
 import Charts from "./Charts";
+import RecentActivity from "./RecentActivity";
 import Users from "./Users";
 
 const Dashboard = () => {
@@ -10,7 +11,7 @@ const Dashboard = () => {
             </div>
             <Cards />
             <Charts />
-            <Users />
+            <RecentActivity />
         </section>
     )
 }
