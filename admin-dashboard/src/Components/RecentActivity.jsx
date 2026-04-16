@@ -6,17 +6,17 @@ const RecentActivity = () => {
     
     const checkColor = (type) => {
         if (type == "create") {
-            return "bg-(--color-card-green)/20"
+            return "text-(--color-card-green)"
         } else if (type === "update") {
-            return "bg-(--color-card-blue)/20"
+            return "text-(--color-card-blue)"
         } else if (type === "delete") {
-            return "bg-(--color-card-red)/20"
+            return "text-(--color-card-red)"
         } else if (type === "login") {
-            return "bg-(--color-primary)/20"
+            return "text-(--color-primary)"
         } else if (type === "upload") {
-            return "bg-(--color-card-yellow)/20"
+            return "text-(--color-card-yellow)"
         } else {
-            return "bg-gray-500/20"
+            return "text-gray-500"
         }
     }
 
