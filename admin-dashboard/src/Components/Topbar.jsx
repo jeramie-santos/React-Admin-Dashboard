@@ -9,6 +9,7 @@ const Topbar = ({toggle}) => {
     const [isProfileOpen, setIsProfileOpen] = useState(false);
     const [isNotifOpen, setIsNotifOpen] = useState(false);
     const menuRef = useRef(null);
+    const notifRef = useRef(null);
 
     useEffect(() => {
         const handleClickOutsideProfile = (event) => {
@@ -17,10 +18,18 @@ const Topbar = ({toggle}) => {
             }
         }
 
+        const handleClickOutsideNotif = (event) => {
+            if (notifRef.current && !notifRef.current.contains(event.target)) {
+                setIsNotifOpen(false)
+            }
+        }
+
         document.addEventListener("mousedown", handleClickOutsideProfile);
+        document.addEventListener("mousedown", handleClickOutsideNotif);
 
         return () => {
             document.removeEventListener("mousedown", handleClickOutsideProfile)
+            document.removeEventListener("mousedown", handleClickOutsideNotif)
         }
 
     }, [])
@@ -32,7 +41,7 @@ const Topbar = ({toggle}) => {
             </button>
 
             <div className="flex items-center gap-6">
-                <div className="relative">
+                <div ref={notifRef} className="relative">
                     <FontAwesomeIcon icon={faBell} className="text-2xl hover:cursor-pointer" onClick={() => setIsNotifOpen(prev => !prev)}/>
                     
                     {isNotifOpen && 
@@ -53,7 +62,7 @@ const Topbar = ({toggle}) => {
                         </div>
                         <div className="border-t"></div>
                         <div className="flex gap-2 items-center hover:cursor-pointer">
-                            <p className="flex-1">1 mins ago</p>
+                            <p className="flex-1">2 hrs ago</p>
                             <p className="flex-3">Anna Reyes submitted a request</p>
                         </div>
                     </div>
