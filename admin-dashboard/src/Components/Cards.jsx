@@ -12,7 +12,7 @@ const Cards = () => {
                     </div>
                     <div className="flex-1 flex flex-col gap-1 justify-end">
                         <h3 className="font-bold text-3xl">1,245</h3>
-                        <p className="text-sm text-(--color-primary)">+120 new users today</p>
+                        <p className="text-sm text-(--color-primary-dark)">+120 new users today</p>
                     </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@ const Cards = () => {
                     </div>
                     <div className="flex-1 flex flex-col gap-1 justify-end">
                         <h3 className="font-bold text-3xl">₱53,200</h3>
-                        <p className="text-sm text-(--color-primary)">Recurring Revenue</p>
+                        <p className="text-sm text-(--color-primary-dark)">Recurring Revenue</p>
                     </div>
                 </div>
             </div>
@@ -36,7 +36,7 @@ const Cards = () => {
                     </div>
                     <div className="flex-1 flex flex-col gap-1">
                         <h3 className="font-bold text-3xl">320</h3>
-                        <p className="text-sm text-(--color-primary)">+5% from last week</p>
+                        <p className="text-sm text-(--color-primary-dark)">+5% from last week</p>
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@ const Cards = () => {
                     </div>
                     <div className="flex-1 flex flex-col gap-1">
                         <h3 className="font-bold text-3xl">+14.5%</h3>
-                        <p className="text-sm text-(--color-primary)">Month over month</p>
+                        <p className="text-sm text-(--color-primary-dark)">Month over month</p>
                     </div>
                 </div>
             </div>     
