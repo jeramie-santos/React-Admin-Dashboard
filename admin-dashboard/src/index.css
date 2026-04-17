@@ -3,24 +3,25 @@
 @import "tailwindcss";
 
 :root {
-  --color-bg: #e6eaed; 
-  --color-card: #ffffff;          
+  --color-bg: #edf0f5; 
+  --color-card: #fdfffe;          
 
-  --color-primary: #283179;
+  --color-primary: #6569f1;
   --color-primary-light: #b2c2da;
-  --color-primary-dark: #171c45;
+  --color-primary-dark: #4f52be;
 
   --color-text-primary: #212529;
   --color-text-secondary: #a1a7cc; 
 
-  --color-card-green: #29b348;
-  --color-card-yellow: #f5b225;
-  --color-card-red: #ec536c;
-  --color-card-blue: #44a2d2;
+  --color-card-green: #05ba82;
+  --color-card-yellow: #db750e;
+  --color-card-red: #d95c5c;
+  --color-card-blue: #2dadcc;
 
 
 }
 
 body {
     font-family: Barlow, sans-serif;
+    scroll-behavior: smooth;
 }

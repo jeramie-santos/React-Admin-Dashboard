@@ -37,30 +37,30 @@ const Topbar = ({toggle}) => {
     return (
         <section className="p-4 md:p-6 flex items-center justify-between lg:justify-end shadow-md z-10 bg-(--color-card)">
             <button onClick={toggle} className="lg:hidden">
-                <FontAwesomeIcon icon={faBars} className="text-3xl"/>
+                <FontAwesomeIcon icon={faBars} className="text-3xl text-(--color-primary)"/>
             </button>
 
             <div className="flex items-center gap-6">
                 <div ref={notifRef} className="relative">
-                    <FontAwesomeIcon icon={faBell} className="text-2xl hover:cursor-pointer" onClick={() => setIsNotifOpen(prev => !prev)}/>
+                    <FontAwesomeIcon icon={faBell} className="p-2 rounded-md text-2xl hover:cursor-pointer text-(--color-primary) hover:text-(--color-primary-dark) hover:bg-(--color-bg)"  onClick={() => setIsNotifOpen(prev => !prev)}/>
                     
                     {isNotifOpen && 
-                    <div className="flex flex-col gap-4 text-sm z-50 w-60 h-60 bg-(--color-card) absolute top-19 right-0 rounded-2xl shadow-2xl p-4 overflow-auto">
+                    <div className="flex flex-col gap-4 text-sm z-50 w-60 h-60 md:w-80 md:h-fit bg-(--color-card) absolute top-19 md:top-22 right-0 rounded-2xl shadow-2xl p-4 overflow-auto">
                         <div className="flex gap-2 items-center hover:cursor-pointer">
                             <p className="flex-1">1 min ago</p>
                             <p className="flex-3">Anna Reyes submitted a request.</p>
                         </div>
-                        <div className="border-t"></div>
+                        <div className="h-[1px] bg-(--color-primary-light)"></div>
                         <div className="flex gap-2 items-center hover:cursor-pointer">
                             <p className="flex-1">5 mins ago</p>
                             <p className="flex-3">Chris Bautista has Sign Up.</p>
                         </div>
-                        <div className="border-t"></div>
+                        <div className="h-[1px] bg-(--color-primary-light)"></div>
                         <div className="flex gap-2 items-center hover:cursor-pointer">
                             <p className="flex-1">1 hr ago</p>
                             <p className="flex-3">John Cruz Generated a report</p>
                         </div>
-                        <div className="border-t"></div>
+                        <div className="h-[1px] bg-(--color-primary-light)"></div>
                         <div className="flex gap-2 items-center hover:cursor-pointer">
                             <p className="flex-1">2 hrs ago</p>
                             <p className="flex-3">Anna Reyes submitted a request</p>
@@ -81,7 +81,7 @@ const Topbar = ({toggle}) => {
                                 <p className="text-(--color-text-secondary)">maxsantos@gmail.com</p>
                             </div>
                         </div>
-                        <div className="h-[1px] bg-(--color-primary)"></div>
+                        <div className="h-[1px] bg-(--color-primary-light)"></div>
                         <div className="flex flex-col gap-6">
                             <div className="flex gap-2 items-center hover:cursor-pointer">
                                 <FontAwesomeIcon icon={faUser} className="text-(--color-primary)"/>
@@ -92,7 +92,7 @@ const Topbar = ({toggle}) => {
                                 Setting
                             </div>
                         </div>
-                        <div className="h-[1px] bg-(--color-primary)"></div>
+                        <div className="h-[1px] bg-(--color-primary-light)"></div>
                         <div className="flex gap-2 items-center hover:cursor-pointer">
                             <FontAwesomeIcon icon={faArrowRightFromBracket} className="text-(--color-primary)"/>
                             Log Out
