@@ -35,7 +35,7 @@ const RecentActivity = () => {
                         </tr>
                      </thead>
                     <tbody>
-                        {recentActivityData.map((data, index) => 
+                        {recentActivityData.map((data) => 
                             <tr key={data.id}>
                                 <td className="p-3">{data.user}</td>
                                 <td className="p-3">{data.action}</td>
