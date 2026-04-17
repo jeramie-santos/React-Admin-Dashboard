@@ -7,13 +7,13 @@ import displayPic from "../assets/Zoro.jpg"
 
 const Sidebar = ({isOpen, setIsOpen}) => {
 
-    const navActive = "bg-(--color-primary-dark) transition duration-300 p-2 rounded-lg"
-    
+    const navActive = "bg-(--color-primary-dark) transition duration-300 p-2 rounded-lg"    
 
     return (
-        <nav  className={`bg-(--color-primary) text-white py-5 z-50
-            ${isOpen ? " h-screen w-60 fixed" : "hidden"}  
-            lg:flex lg:sticky lg:top-0 lg:py-0 lg:h-screen`}>
+        <nav className={`bg-(--color-primary) text-white py-5 z-50 fixed top-0 left-0 h-screen w-60
+            transform transition-tranform duration-300 ease-in-out
+            ${isOpen ? "translate-x-0" : "-translate-x-full"}  
+            lg:w-80 lg:translate-x-0 lg:flex lg:sticky lg:py-0`}>
             <div className="flex flex-col gap-8 px-10 lg:py-5">
                 <div className="flex justify-end">
                     <button onClick={() => setIsOpen(false)} className="lg:hidden text-start text-xl border py-2 px-5 font-bold rounded-lg">✕</button>

@@ -1,9 +1,6 @@
 import recentActivityData from "../data/recentActivityData.json"
 
 const RecentActivity = () => {
-
-    console.log(recentActivityData);
-    
     const checkColor = (type) => {
         if (type == "create") {
             return "text-(--color-card-green)"
