@@ -36,7 +36,7 @@ const RecentActivity = () => {
                      </thead>
                     <tbody>
                         {recentActivityData.map((data, index) => 
-                            <tr key={data.id} className={index % 2 === 0 ? "bg-(--color-bg)" : "bg-white"}>
+                            <tr key={data.id}>
                                 <td className="p-3">{data.user}</td>
                                 <td className="p-3">{data.action}</td>
                                 <td className="p-3">{data.target === null ? "N/A" : data.target}</td>
