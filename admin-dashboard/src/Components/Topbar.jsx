@@ -44,7 +44,7 @@ const Topbar = ({toggle}) => {
                     <div className={`flex flex-col gap-4 text-sm z-50 w-60 h-60 md:w-80 md:h-fit 
                     bg-(--color-card) absolute top-19 md:top-22 right-0 rounded-2xl shadow-2xl p-4 overflow-auto
                     transform transition-all duration-200 ease-out
-                    ${isNotifOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"}`}>
+                    ${isNotifOpen ? "opacity-100 translate-y-0 pointer-events-auto visible" : "opacity-0 translate-y-2 pointer-events-none invisible"}`}>
                         <div className="flex gap-2 items-center hover:cursor-pointer">
                             <p className="flex-1">1 min ago</p>
                             <p className="flex-3">Anna Reyes submitted a request.</p>
@@ -73,7 +73,7 @@ const Topbar = ({toggle}) => {
                     
                     <div className={`flex flex-col gap-4 text-sm z-50 w-60 h-60 bg-(--color-card) absolute top-22 right-0 rounded-2xl shadow-2xl p-4
                         transform transition-all duration-200 ease-out
-                        ${isProfileOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"}`}>
+                        ${isProfileOpen ? "opacity-100 translate-y-0 pointer-events-auto visible" : "opacity-0 translate-y-2 pointer-events-none invisible"}`}>
                         <div className="flex gap-2 items-center">
                             <img src={displayPic} alt="Profile Pic" className="w-13 h-13 rounded-full"/>
                             <div>
