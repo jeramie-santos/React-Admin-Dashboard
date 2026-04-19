@@ -12,11 +12,11 @@ const App = () => {
 
   return (
         <Routes>
-          <Route path="*" element={<PageNotFound/>}/>
           <Route element={<Layout isOpen={isOpen} setIsOpen={setIsOpen}/>}>
             <Route path="/" element={<Dashboard/>}/>
             <Route path="/analytics" element={<Analytics/>}/>
             <Route path="/users" element={<UsersLists/>}/>
+            <Route path="*" element={<PageNotFound/>}/>
           </Route>
         </Routes>
   )
