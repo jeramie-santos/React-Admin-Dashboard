@@ -3,17 +3,17 @@ import recentActivityData from "../data/recentActivityData.json"
 const RecentActivity = () => {
     const checkColor = (type) => {
         if (type == "create") {
-            return "text-(--color-card-green)"
+            return "text-(--color-card-green) bg-(--color-card-green)/15"
         } else if (type === "update") {
-            return "text-(--color-card-blue)"
+            return "text-(--color-card-blue) bg-(--color-card-blue)/15"
         } else if (type === "delete") {
-            return "text-(--color-card-red)"
+            return "text-(--color-card-red) bg-(--color-card-red)/15"
         } else if (type === "login") {
-            return "text-(--color-primary)"
+            return "text-(--color-primary) bg-(--color-primary)/15"
         } else if (type === "upload") {
-            return "text-(--color-card-yellow)"
+            return "text-(--color-card-yellow) bg-(--color-card-yellow)/15"
         } else {
-            return "text-gray-500"
+            return "text-gray-500 bg-gray-500/15"
         }
     }
 
@@ -38,7 +38,7 @@ const RecentActivity = () => {
                                 <td className="p-3">{data.action}</td>
                                 <td className="p-3">{data.target === null ? "N/A" : data.target}</td>
                                 <td className="p-3">{data.time}</td>
-                                <td className={`p-3 ${checkColor(data.type)}`}>{data.type}</td>
+                                <td className="p-3"><p className={`${checkColor(data.type)} text-center rounded-full`}>{data.type}</p></td>
                             </tr>
                         )}
                     </tbody>

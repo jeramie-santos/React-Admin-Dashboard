@@ -25,7 +25,7 @@ const Users = () => {
                                 <td className="p-3">{user.role}</td>
                                 <td className="p-3">{user.status}</td>
                                 <td className="p-3 flex items-center gap-4">
-                                    <button className="border py-2 px-4 rounded-lg text-(--color-card-green) bg-(--color-card-green)/20 hover:cursor-pointer">Edit</button>
+                                    <button className="border py-2 px-4 rounded-lg text-(--color-card-blue) bg-(--color-card-blue)/20 hover:cursor-pointer">Edit</button>
                                     <button className="border py-2 px-4 rounded-lg text-(--color-card-red) bg-(--color-card-red)/20 hover:cursor-pointer">Delete</button>
                                 </td>
                             </tr>
