@@ -38,7 +38,7 @@ const RecentActivity = () => {
                                 <td className="p-3">{data.action}</td>
                                 <td className="p-3">{data.target === null ? "N/A" : data.target}</td>
                                 <td className="p-3">{data.time}</td>
-                                <td className="p-3"><p className={`${checkColor(data.type)} text-center rounded-full`}>{data.type}</p></td>
+                                <td className="p-3"><p className={`${checkColor(data.type)} text-center w-fit px-4 rounded-full`}>{data.type}</p></td>
                             </tr>
                         )}
                     </tbody>
