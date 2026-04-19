@@ -1,5 +1,5 @@
 import { Chart as ChartJS } from "chart.js/auto"
-import { Bar, Doughnut, Line } from "react-chartjs-2"
+import { Bar, Line, Pie } from "react-chartjs-2"
 
 import orderData from "../data/orderData.json"
 import salesData from "../data/salesData.json"
@@ -53,7 +53,7 @@ const Charts = () => {
                 <div className="bg-(--color-card) shadow-lg flex flex-col w-full gap-4 h-75 md:h-90 lg:w-0 lg:h-100 lg:flex-1 rounded-xl p-4">
                   <h3 className="font-bold text-xl">Categories</h3>
                   <div className="flex-1 relative">
-                    <Doughnut 
+                    <Pie 
                         data={categoriesData}
                         options={optionsCategories}
                   /> 
